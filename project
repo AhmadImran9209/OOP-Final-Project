@@ -1,0 +1,49 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Player
+{
+	string name;
+	int shirt_no;
+	float average;
+	int icc_rank;
+	int total_runs;
+	int matches_played;
+	int total_wickets;
+public:
+	Player()
+	{
+		name = "";
+		shirt_no = 0;
+		average = 0;
+		icc_rank = 0;
+		total_runs = 0;
+		matches_played = 0;
+		total_wickets = 0;
+	}
+
+	void addPlayer()
+	{
+
+	}
+
+	void removeplayer()
+	{
+
+	}
+	void searchplayer()
+	{
+
+	}
+
+	~Player()
+	{
+
+	}
+};
+
+class Team :public Player
+{
+
+};

@@ -16,4 +16,7 @@ public:
   ~Player();
 };
 
-class 
+class Team: public Player
+{
+
+};

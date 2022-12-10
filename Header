@@ -1,9 +1,11 @@
+#pragma once
 #include<iostream>
 #include<string>
 using namespace std;
 
 class Player
 {
+private:
 	string name;
 	int shirt_no;
 	float average;
@@ -12,11 +14,57 @@ class Player
 	int matches_played;
 	int total_wickets;
 public:
-  Player();
-  ~Player();
+	Player();
+
+	void setname(string name);
+	void setshirt_no(int shirt_no);
+	void setaverage(float average);
+	void seticc_rank(int icc_rank);
+	void settotal_runs(int total_runs);
+	void setmathes_played(int matches_played);
+	void settotal_wickets(int total_wickets);
+
+	string getname();
+	int getshirt_no();
+	float getaverage();
+	int geticc_rank();
+	int gettotal_runs();
+	int getmatches_played();
+	int gettotal_wickets();
+
+	void add_player();
+	void remove_player();
+	void search_player();
+	void update_player();
+	~Player();
 };
 
-class Team: public Player
+class Team :public Player
 {
+private:
+	int no_of_players;
+	int total_matches_won;
+	int total_matches_lost;
+	string team_captain;
+	string team_coach;
+	string admin_username;
+	string admin_password;
+public:
+	Team();
 
+	void setno_of_players(int no_of_player);
+	void settotal_matches_won(int total_matches_won);
+	void settotal_matches_lost(int total_matches_lost);
+	void setteam_captain(string team_captain);
+	void setteam_coach(string team_coach);
+	void setadmin_username(string admin_username);
+	void setadmin_password(string admin_password);
+
+	int getno_of_players();
+	int gettotal_matches_won();
+	int gettotal_matches_lost();
+	string getteam_captain();
+	string getteam_coach();
+	string getadmin_username();
+	string getadmin_password();
 };

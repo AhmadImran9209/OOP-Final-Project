@@ -1,1 +1,162 @@
+#include"Header.h"
 
+Player::Player()
+{
+	name = "";
+	shirt_no = 0;
+	average = 0;
+	icc_rank = 0;
+	total_runs = 0;
+	matches_played = 0;
+	total_wickets = 0;
+}
+
+void Player::setname(string name)
+{
+	this->name = name;
+}
+void Player::setshirt_no(int shirt_no)
+{
+	this->shirt_no = shirt_no;
+}
+void Player::setaverage(float average)
+{
+	this->average = average;
+}
+void Player::seticc_rank(int icc_rank)
+{
+	this->icc_rank = icc_rank;
+}
+void Player::settotal_runs(int total_runs)
+{
+	this->total_runs = total_runs;
+}
+void Player::setmathes_played(int mathes_played)
+{
+	this->matches_played = matches_played;
+}
+void Player::settotal_wickets(int total_wickets)
+{
+	this->total_wickets = total_wickets;
+}
+
+string Player::getname()
+{
+	return name;
+}
+int Player::getshirt_no()
+{
+	return shirt_no;
+}
+float Player::getaverage()
+{
+	return average;
+}
+int Player::geticc_rank()
+{
+	return icc_rank;
+}
+int Player::gettotal_runs()
+{
+	return total_runs;
+}
+int Player::getmatches_played()
+{
+	return matches_played;
+}
+int Player::gettotal_wickets()
+{
+	return total_wickets;
+}
+
+void Player::add_player()
+{
+
+}
+void Player::remove_player()
+{
+
+}
+void Player::search_player()
+{
+
+}
+void Player::update_player()
+{
+
+}
+
+Player::~Player()
+{
+
+}
+
+
+Team::Team()
+{
+	no_of_players = 0;
+	total_matches_won = 0;
+	total_matches_lost = 0;
+	team_captain = "";
+	team_coach = "";
+	admin_username = "";
+	admin_password = "";
+}
+
+void Team::setno_of_players(int no_of_players)
+{
+	this->no_of_players = no_of_players;
+}
+void Team::settotal_matches_won(int total_matches_won)
+{
+	this->total_matches_won = total_matches_won;
+}
+void Team::settotal_matches_lost(int total_matches_lost)
+{
+	this->total_matches_lost = total_matches_lost;
+}
+void Team::setteam_captain(string team_captain)
+{
+	this->team_captain = team_captain;
+}
+void Team::setteam_coach(string team_coach)
+{
+	this->team_coach = team_coach;
+}
+void Team::setadmin_username(string admin_username)
+{
+	this->admin_username = admin_username;
+}
+void Team::setadmin_password(string admin_password)
+{
+	this->admin_password = admin_password;
+}
+
+int Team::getno_of_players()
+{
+	return no_of_players;
+}
+int Team::gettotal_matches_won()
+{
+	return total_matches_won;
+}
+int Team::gettotal_matches_lost()
+{
+	return total_matches_lost;
+}
+string Team::getteam_captain()
+{
+	return team_captain;
+}
+string Team::getteam_coach()
+{
+	return team_coach;
+}
+string Team::getadmin_username()
+{
+	return admin_username;
+}
+string Team::getadmin_password()
+{
+	return admin_password;
+}

@@ -203,6 +203,19 @@ Team::~Team()
 
 
 
+Match::Match()
+{
+	team1 = "";
+	team2 = "";
+	date = "";
+	venue = "";
+	match_type = "";
+	tournament_name = "";
+	commentators = "";
+	umpires = "";
+	match_status = "";
+}
+
 void Match::setteam1(string team1)
 {
 	this->team1 = team1;

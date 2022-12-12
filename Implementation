@@ -1,5 +1,16 @@
 #include"Header.h"
 
+void Menu()
+{
+	cout << "-----Menu-----\n";
+	cout << "1) Add Player\n";
+	cout << "1) Remove Player\n";
+	cout << "1) Search PLayer\n";
+	cout << "1) Remove Player\n";
+	cout << "1) Add Team\n";
+	cout << "1) Add Player\n";
+}
+
 Player::Player()
 {
 	name = "";
@@ -69,19 +80,26 @@ int Player::gettotal_wickets()
 	return total_wickets;
 }
 
-void Player::add_player()
+void Player::addPlayer()
+{
+	string name;
+	int shirtno;
+	cout << "Enter player name: ";
+	cin >> name;
+	setname(name);
+	cout << "Enter Player Shirt number: ";
+	cin >> shirtno;
+	setshirt_no(shirtno);
+}
+void Player::removePlayer()
 {
 
 }
-void Player::remove_player()
+void Player::searchPlayer()
 {
 
 }
-void Player::search_player()
-{
-
-}
-void Player::update_player()
+void Player::updatePlayer()
 {
 
 }
@@ -159,4 +177,131 @@ string Team::getadmin_username()
 string Team::getadmin_password()
 {
 	return admin_password;
+}
+
+void Team::displayMatches()
+{
+
+}
+void Team::updateCaptain()
+{
+
+}
+void Team::updateCoach()
+{
+
+}
+void Team::displayTeam()
+{
+
+}
+
+Team::~Team()
+{
+
+}
+
+
+
+void Match::setteam1(string team1)
+{
+	this->team1 = team1;
+}
+void Match::setteam2(string team2)
+{
+	this->team2 = team2;
+}
+void Match::setdate(string date)
+{
+	this->date = date;
+}
+void Match::setvenue(string venue)
+{
+	this->venue = venue;
+}
+void Match::setmatch_type(string match_type)
+{
+	this->match_type = match_type;
+}
+void Match::settournament_name(string tournament_name)
+{
+	this->tournament_name = tournament_name;
+}
+void Match::setcommentators(string commentators)
+{
+	this->commentators = commentators;
+}
+void Match::setumpires(string umpires)
+{
+	this->umpires = umpires;
+}
+void Match::setmatch_status(string match_status)
+{
+	this->match_status = match_status;
+}
+
+string Match::getteam1()
+{
+	return team1;
+}
+string Match::getteam2()
+{
+	return team2;
+}
+string Match::getdate()
+{
+	return date;
+}
+string Match::getvenue()
+{
+	return venue;
+}
+string Match::getmatch_type()
+{
+	return match_type;
+}
+string Match::gettournament_name()
+{
+	return tournament_name;
+}
+string Match::getcommentators()
+{
+	return commentators;
+}
+string Match::getumpires()
+{
+	return umpires;
+}
+string Match::getmatch_status()
+{
+	return match_status;
+}
+
+void Match::conductMatch()
+{
+
+}
+void Match::sheduleMatch()
+{
+
+}
+void Match::updateWorldRecord()
+{
+
+}
+void Match::updateTeamRanking()
+{
+
+}
+void Match::updatePlayerRanking()
+{
+
+}
+void Match::displayUpcomingMatches()
+{
+
+}
+void Match::displayRecentMatches()
+{
+
 }

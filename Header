@@ -3,6 +3,8 @@
 #include<string>
 using namespace std;
 
+void Menu();
+
 class Player
 {
 private:
@@ -32,10 +34,10 @@ public:
 	int getmatches_played();
 	int gettotal_wickets();
 
-	void add_player();
-	void remove_player();
-	void search_player();
-	void update_player();
+	void addPlayer();
+	void removePlayer();
+	void searchPlayer();
+	void updatePlayer();
 	~Player();
 };
 
@@ -67,4 +69,55 @@ public:
 	string getteam_coach();
 	string getadmin_username();
 	string getadmin_password();
+
+	void displayMatches();
+	void updateCaptain();
+	void updateCoach();
+	void displayTeam();
+
+	~Team();
+};
+
+class Match
+{
+private:
+	string team1;
+	string team2;
+	string date;
+	string venue;
+	string match_type;
+	string tournament_name;
+	string commentators;
+	string umpires;
+	string match_status;
+public:
+	Match();
+
+	void setteam1(string team1);
+	void setteam2(string team2);
+	void setdate(string date);
+	void setvenue(string venue);
+	void setmatch_type(string match_type);
+	void settournament_name(string tournament_name);
+	void setcommentators(string commentators);
+	void setumpires(string umpires);
+	void setmatch_status(string match_status);
+
+	string getteam1();
+	string getteam2();
+	string getdate();
+	string getvenue();
+	string getmatch_type();
+	string gettournament_name();
+	string getcommentators();
+	string getumpires();
+	string getmatch_status();
+
+	void conductMatch();
+	void sheduleMatch();
+	void updateWorldRecord();
+	void updateTeamRanking();
+	void updatePlayerRanking();
+	void displayUpcomingMatches();
+	void displayRecentMatches();
 };

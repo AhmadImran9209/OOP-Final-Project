@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<fstream>
 using namespace std;
 
 void Menu();
@@ -90,6 +91,17 @@ private:
 	string commentators;
 	string umpires;
 	string match_status;
+
+	int most_runs;
+	int highest_score;
+	int most_sixes;
+	int most_fours;
+	int most_centuries;
+	int highest_batting_average;
+	int best_batting_strike_rate;
+	int most_wickets;
+	int best_bowling_avg;
+	int best_bowling;
 public:
 	Match();
 
@@ -102,6 +114,28 @@ public:
 	void setcommentators(string commentators);
 	void setumpires(string umpires);
 	void setmatch_status(string match_status);
+
+	void setmost_runs(int most_runs);
+	void sethighest_score(int highest_score);
+	void setmost_sixes(int most_sixes);
+	void setmost_fours(int most_fours);
+	void setmost_centuries(int most_centuries);
+	void sethighest_batting_average(int highest_batting_average);
+	void setbest_batting_strike_rate(int best_batting_strike_rate);
+	void setmost_wickets(int most_wickets);
+	void setbest_bowling_avg(int best_bowling_avg);
+	void setbest_bowling(int best_bowling);
+
+	int getmost_runs();
+	int gethighest_score();
+	int getmost_sixes();
+	int getmost_fours();
+	int getmost_centuries();
+	int gethighest_batting_average();
+	int getbest_batting_strike_rate();
+	int getmost_wickets();
+	int getbest_bowling_avg();
+	int getbest_bowling();
 
 	string getteam1();
 	string getteam2();

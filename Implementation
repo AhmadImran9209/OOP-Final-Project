@@ -2,13 +2,14 @@
 
 void Menu()
 {
-	cout << "-----Menu-----\n";
-	cout << "1) Add Player\n";
-	cout << "1) Remove Player\n";
-	cout << "1) Search PLayer\n";
-	cout << "1) Remove Player\n";
-	cout << "1) Add Team\n";
-	cout << "1) Add Player\n";
+	cout << "\n-----Menu-----\n";
+	cout << "1) Add Players\n";
+	cout << "2) Remove Player\n";
+	cout << "3) Search PLayer\n";
+	cout << "4) update Player\n";
+	cout << "5) update captian\n";
+	cout << "6) update coach\n";
+	cout << "7) display team\n";
 }
 
 Player::Player()
@@ -253,6 +254,91 @@ void Match::setmatch_status(string match_status)
 	this->match_status = match_status;
 }
 
+
+void Match::setmost_runs(int most_runs)
+{
+	this->most_runs = most_runs;
+}
+void Match::sethighest_score(int highest_score)
+{
+	this->highest_score = highest_score;
+}
+void Match::setmost_sixes(int most_sixes)
+{
+	this->most_sixes = most_sixes;
+}
+void Match::setmost_fours(int most_fours)
+{
+	this->most_fours = most_fours;
+}
+void Match::setmost_centuries(int most_centuries)
+{
+	this->most_centuries = most_centuries;
+}
+void Match::sethighest_batting_average(int highest_batting_average)
+{
+	this->highest_batting_average = highest_batting_average;
+}
+void Match::setbest_batting_strike_rate(int best_batting_strike_rate)
+{
+	this->best_batting_strike_rate = best_batting_strike_rate;
+}
+void Match::setmost_wickets(int most_wickets)
+{
+	this->most_wickets = most_wickets;
+}
+void Match::setbest_bowling_avg(int best_bowling_avg)
+{
+	this->best_bowling_avg = best_bowling_avg;
+}
+void Match::setbest_bowling(int best_bowling)
+{
+	this->best_bowling = best_bowling;
+}
+
+int Match::getmost_runs()
+{
+	return most_runs;
+}
+int Match::gethighest_score()
+{
+	return highest_score;
+}
+int Match::getmost_sixes()
+{
+	return most_sixes;
+}
+int Match::getmost_fours()
+{
+	return most_fours;
+}
+int Match::getmost_centuries()
+{
+	return most_centuries;
+}
+int Match::gethighest_batting_average()
+{
+	return highest_batting_average;
+}
+int Match::getbest_batting_strike_rate()
+{
+	return best_batting_strike_rate;
+}
+int Match::getmost_wickets()
+{
+	return most_wickets;
+}
+int Match::getbest_bowling_avg()
+{
+	return best_bowling_avg;
+}
+int Match::getbest_bowling()
+{
+	return best_bowling;
+}
+
+
+
 string Match::getteam1()
 {
 	return team1;
@@ -292,15 +378,62 @@ string Match::getmatch_status()
 
 void Match::conductMatch()
 {
-
+	int option;
+	cout << "1) already sheduled match\n 2)Shedule a new match \n";
+	cin >> option;
+	if (option == 1)
+	{
+		displayUpcomingMatches();
+	}
+	else if (option == 2)
+	{
+		sheduleMatch();
+	}
+	updateWorldRecord();
 }
 void Match::sheduleMatch()
 {
-
+	int t1, t2;
+	string date, ven, mt, tn, com, ump, ms;
+	cout << "Available teams are: " << endl;
+	cout << getteam1() << endl;
+	cout << getteam2() << endl;
+	cout << "Select Teams \n";
+	cin >> t1, t2;
+	cout << "Enter Time: ";
+	cin >> date;
+	setdate(date);
+	cout << "Enter Venue: ";
+	cin >> ven;
+	setvenue(ven);
+	cout << "Enter match type: ";
+	cin >> mt;
+	setmatch_type(mt);
+	cout << "Enter Tournament name: ";
+	cin >> tn;
+	settournament_name(tn);
+	cout << "Enter commentators: ";
+	cin >> com;
+	setcommentators(com);
+	cout << "Enter umpires: ";
+	cin >> ump;
+	setumpires(ump);
+	cout << "Enter match status: ";
+	cin >> ms;
+	setmatch_status(ms);
 }
 void Match::updateWorldRecord()
 {
-
+	setmost_runs(most_runs);
+	sethighest_score(highest_score);
+	setmost_sixes(most_sixes);
+	setmost_fours(most_fours);
+	setmost_centuries(most_centuries);
+	sethighest_batting_average(highest_batting_average);
+	setbest_batting_strike_rate(best_batting_strike_rate);
+	setmost_wickets(most_wickets);
+	setbest_bowling_avg(best_bowling_avg);
+	setbest_bowling(best_bowling);
 }
 void Match::updateTeamRanking()
 {

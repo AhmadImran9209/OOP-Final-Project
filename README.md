@@ -1,16 +1,13 @@
 Cricket Buz Game
-A simple console-based cricket simulation game implemented in C++.
+Cricket Buz Game is a console-based application developed in C++ using object-oriented programming principles. It provides users with the opportunity to simulate a cricket match, manage a cricket database, and keep track of players' statistics.
 
 Features
-Simulate cricket matches with batting, bowling, and fielding.
-Manage players, teams, and match statistics in a basic database.
+Match Simulation: Simulate a cricket match with the ability to make decisions such as batting, bowling, and fielding.
 
-Usage
-Compilation:
-Use a C++ compiler: g++ main.cpp -o cricket_buz_game.
-Execution:
-Run the executable: ./cricket_buz_game.
-Gameplay:
-Follow on-screen instructions.
-Database:
-Player, team, and match data stored in cricket_database.txt.
+Cricket Database: The game includes a cricket database to store comprehensive information about players, teams, and match statistics.
+
+Player Statistics: Keep track of individual player performance, including runs scored, wickets taken, and other relevant metrics.
+
+Team Management: Manage teams, player line-ups, and team strategies for a realistic cricket experience.
+
+Scoreboard: Display real-time updates of the match on a virtual scoreboard.

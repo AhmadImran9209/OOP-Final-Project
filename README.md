@@ -1,13 +1,77 @@
-Cricket Buz Game
-Cricket Buz Game is a console-based application developed in C++ using object-oriented programming principles. It provides users with the opportunity to simulate a cricket match, manage a cricket database, and keep track of players' statistics.
+CricBuz - Cricket Management System
+CricBuz is a simple Cricket Management System that allows users to keep track of cricket matches, teams, and players. It provides functionalities to manage the cricketing ecosystem efficiently. Whether you're a cricket enthusiast or managing a local cricket league, CricBuz has got you covered.
 
 Features
-Match Simulation: Simulate a cricket match with the ability to make decisions such as batting, bowling, and fielding.
+Match Management:
 
-Cricket Database: The game includes a cricket database to store comprehensive information about players, teams, and match statistics.
+Schedule, update, and view match details.
+Record scores, wickets, and other match statistics.
+Generate match reports and summaries.
+Team Management:
 
-Player Statistics: Keep track of individual player performance, including runs scored, wickets taken, and other relevant metrics.
+Create, edit, and delete teams.
+Add or remove players from teams.
+View team profiles and statistics.
+Player Management:
 
-Team Management: Manage teams, player line-ups, and team strategies for a realistic cricket experience.
+Maintain a database of cricket players.
+Track individual player statistics.
+View player profiles and performance history.
+Tournament Management:
 
-Scoreboard: Display real-time updates of the match on a virtual scoreboard.
+Organize and manage cricket tournaments.
+Keep track of fixtures, results, and standings.
+Generate tournament reports.
+User-Friendly Interface:
+
+Intuitive command-line or graphical user interface for easy navigation.
+Helpful prompts and messages to guide users.
+How to Use
+Installation:
+
+Clone the repository or download the CricBuz files.
+Ensure you have the required dependencies (if any).
+Run the application using the provided script or commands.
+Navigation:
+
+Use the main menu to access different features (Matches, Teams, Players, Tournaments).
+Follow on-screen instructions and prompts for each feature.
+Match Updates:
+
+Input match details such as scores, wickets, and player performances.
+View live updates during an ongoing match.
+Team and Player Information:
+
+Access and modify team and player details easily.
+Retrieve comprehensive statistics for teams and players.
+Tournament Organization:
+
+Set up tournaments with fixtures and schedules.
+Monitor the progress of the tournament and view final results.
+Reports and Summaries:
+
+Generate reports for matches, teams, players, and tournaments.
+Utilize summaries to analyze performance trends.
+Technologies Used
+The system is built using [programming language] and [framework/library].
+[Any other technologies or tools used].
+Example Usage
+bash
+Copy code
+# Run CricBuz
+./cricbuz.sh
+
+# Main Menu
+1. Matches
+2. Teams
+3. Players
+4. Tournaments
+5. Exit
+
+# Select Option (e.g., Matches)
+1. Schedule Match
+2. Update Match
+3. View Match Details
+4. Back to Main Menu
+
+# Follow On-Screen Prompts...
